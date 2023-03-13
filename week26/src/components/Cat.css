@@ -1,0 +1,14 @@
+.cat-card {
+  width: 30%;
+  margin: 10px;
+}
+
+.cat-card img {
+  height: 150px;
+}
+
+.cat-card button {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+}
