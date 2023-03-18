@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Cat from "./components/Cat";
-import "./components/Cat.css";
+import "./components/Cat.scss";
 
 const cats = [
   {

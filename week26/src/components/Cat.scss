@@ -1,0 +1,21 @@
+$mainColor: rgb(35, 189, 37);
+$textColor: rgb(255, 255, 255);
+
+.cat-card {
+  width: 30%;
+  margin: 10px;
+}
+
+.cat-card img {
+  height: 150px;
+}
+
+.button {
+  width: 70%;
+  height: 30px;
+  margin-top: 15px;
+  border: $mainColor;
+  border-radius: 5px;
+  background-color: $mainColor;
+  color: $textColor;
+}

@@ -1,5 +1,22 @@
 import React from "react";
-import "./Cat.css";
+import "./Cat.scss";
+
+//const style = { backgroundColor: "red" };
+
+class Cat extends React.Component {
+  render() {
+    const { name, url, text } = this.props;
+    return (
+      <div className="cat-card">
+        <img src={url}></img>
+        <div className="cat-name">{name}</div>
+        <div className="cat-text">Замечательный ласковый котик</div>
+        <div className="cat-text">{text}</div>
+        <button className="button">Взять домой</button>
+      </div>
+    );
+  }
+}
 
 // function Cat(props) {
 //   return (
@@ -14,20 +31,5 @@ import "./Cat.css";
 // }
 
 // export default Cat;
-
-class Cat extends React.Component {
-  render() {
-    const { name, url, text } = this.props;
-    return (
-      <div className="cat-card">
-        <img src={url}></img>
-        <div className="cat-name">{name}</div>
-        <div className="cat-text">Замечательный ласковый котик</div>
-        <div className="cat-text">{text}</div>
-        <button>Взять домой</button>
-      </div>
-    );
-  }
-}
 
 export default Cat;
