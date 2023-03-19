@@ -1,0 +1,25 @@
+$firstColor: rgb(0, 204, 255);
+$secondColor: rgb(6, 182, 6);
+$thirdColor: rgb(245, 119, 73);
+$fourthColor: rgb(87, 84, 84);
+$textColor: rgb(255, 255, 255);
+
+.rates-card {
+  width: 200px;
+  margin: 3px;
+  border: 1px solid green;
+}
+
+.rates-name {
+  font-size: 18px;
+  background-color: $firstColor;
+}
+
+.price {
+  font-size: 40px;
+}
+
+.selected {
+  border: 2px solid orange;
+  font-weight: bolder;
+}
