@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import "./App.css";
+import styles from "./App.css";
+
 import Cat from "./components/Cat";
 import "./components/Cat.scss";
 
@@ -12,6 +12,7 @@ const cats = [
   {
     name: "Васька",
     url: "https://2ch.hk/vg/arch/2022-12-12/src/45031634/16695811280610.jpg",
+    isSelected: true,
   },
   {
     name: "Снежок",
@@ -19,12 +20,22 @@ const cats = [
   },
 ];
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      {cats.map((cat) => (
-        <Cat name={cat.name} url={cat.url} text={cat.text}></Cat>
-      ))}
+    <div>
+      <div className={`${styles.App} ${props.theme.App}`}>
+        {cats.map((cat) => (
+          <Cat
+            name={cat.name}
+            url={cat.url}
+            text={cat.text}
+            isSelected={cat.isSelected}
+          ></Cat>
+        ))}
+      </div>
+      <div className={styles.position}>
+        <button className={styles.button}>Кнопка</button>
+      </div>
     </div>
   );
 }
