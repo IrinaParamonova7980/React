@@ -4,19 +4,23 @@ $thirdColor: rgb(245, 119, 73);
 $fourthColor: rgb(87, 84, 84);
 $textColor: rgb(255, 255, 255);
 
-.rates-card {
+.rates_card {
   width: 200px;
   margin: 3px;
   border: 1px solid green;
 }
 
-.rates-name {
+.rates_name {
   font-size: 18px;
   background-color: $firstColor;
 }
 
 .price {
   font-size: 40px;
+  }
+
+.text{
+  color: brown;
 }
 
 .selected {

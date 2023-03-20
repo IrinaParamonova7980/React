@@ -8,6 +8,11 @@ class Cat extends React.Component {
   render() {
     const { name, url, text, isSelected } = this.props;
     const classCat = isSelected ? "selected" : "";
+    let className = "button";
+    if (this.props.success) {
+      className += "button__success";
+}
+
     return (
       <div className={`cat-card ${classCat}`}>
         <img src={url} className="cat-card-image"></img>
@@ -15,7 +20,7 @@ class Cat extends React.Component {
         <div className="cat-text">Замечательный ласковый котик</div>
         <div className="cat-text">{text}</div>
         <div>
-          <button className="button">Взять домой</button>
+          <button className={className}>Взять домой</button>
         </div>
         {isSelected && <img src={cat} className="cat-image" />}
         {!isSelected && <div>Не взяли</div>}

@@ -20,6 +20,11 @@ $textColor: rgb(255, 255, 255);
   color: $textColor;
 }
 
+.button__success{
+  background: fuchsia;
+    color: white;
+}
+
 .selected {
   border: 2px solid orange;
   font-weight: bolder;

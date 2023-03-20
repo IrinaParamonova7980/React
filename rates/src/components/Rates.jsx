@@ -1,14 +1,16 @@
-import "./Rates.scss";
+import styles from "./rates.module.scss";
 
 function Rates(props) {
+  const theme = props.theme;
+
   return (
-    <div className="rates-card">
-      <div className="rates-name">{props.name}</div>
-      <div className="text">руб</div>
-      <div className="price"> {props.price} </div>
-      <div className="text">/мес</div>
-      <div className="text">{props.speed} </div>
-      <div className="text">Объем включенного трафика не ограничен</div>
+    <div className={styles.rates_card}>
+      <div className={styles.rates_name}>{props.name}</div>
+      <div className={styles.text}>руб</div>
+      <div className={styles.price}> {props.price} </div>
+      <div className={styles.text}>/мес</div>
+      <div className={styles.text}>{props.speed} </div>
+      <div className={styles.text}>Объем включенного трафика не ограничен</div>
     </div>
   );
 }
