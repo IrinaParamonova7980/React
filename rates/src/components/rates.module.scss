@@ -7,11 +7,11 @@ $textColor: rgb(255, 255, 255);
 .rates_card {
   width: 200px;
   margin: 3px;
-  border: 1px solid green;
+  border: 1px solid $secondColor;
+}
 
-  .rates_card__selected {
-    width: 250px;
-  }
+.rates_card__selected {
+  width: 250px;
 }
 
 .rates_name {

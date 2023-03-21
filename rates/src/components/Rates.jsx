@@ -1,16 +1,10 @@
 import styles from "./rates.module.scss";
 
 function Rates(props) {
-  {
-    isSelected ? (
-      <div className={styles.rates_card__selected}></div>
-    ) : (
-      <div className={styles.rates_card}></div>
-    );
-  }
+  const classRates = props.isSelected ? "styles.rates_card__selected" : "";
 
   return (
-    <div className={styles.rates_card}>
+    <div className={`styles.rates_card ${classRates}`}>
       <div className={styles.rates_name}>{props.name}</div>
       <div className={styles.text}>руб</div>
       <div className={styles.price}> {props.price} </div>
