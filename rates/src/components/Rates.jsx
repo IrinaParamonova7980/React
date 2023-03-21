@@ -1,7 +1,13 @@
 import styles from "./rates.module.scss";
 
 function Rates(props) {
-  const theme = props.theme;
+  {
+    isSelected ? (
+      <div className={styles.rates_card__selected}></div>
+    ) : (
+      <div className={styles.rates_card}></div>
+    );
+  }
 
   return (
     <div className={styles.rates_card}>

@@ -8,6 +8,10 @@ $textColor: rgb(255, 255, 255);
   width: 200px;
   margin: 3px;
   border: 1px solid green;
+
+  .rates_card__selected {
+    width: 250px;
+  }
 }
 
 .rates_name {
@@ -17,9 +21,9 @@ $textColor: rgb(255, 255, 255);
 
 .price {
   font-size: 40px;
-  }
+}
 
-.text{
+.text {
   color: brown;
 }
 

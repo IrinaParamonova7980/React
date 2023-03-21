@@ -1,8 +1,9 @@
 import "./App.css";
 import Rates from "./components/Rates";
+import Login from "./components/Login/Login";
 import Component from "./components/Component/Component";
-import themeLight from "./components/Component/themelight.css";
-import themeDark from "./components/Component/themedark.css";
+import themelight from "./components/Component/themelight.css";
+import themedark from "./components/Component/themedark.css";
 
 const rates = [
   {
@@ -37,12 +38,13 @@ function App() {
           price={rate.price}
           speed={rate.speed}
           isSelected={rate.isSelected}
-        ></Rates>        
+        ></Rates>
       ))}
       <div>
-      <Component theme={themeDark}></Component> 
-      <Component theme={themeLight}></Component>
-        </div>
+        <Component theme={themedark}></Component>
+        <Component theme={themelight}></Component>
+        <Login></Login>
+      </div>
     </div>
   );
 }
