@@ -1,33 +1,74 @@
-$firstColor: rgb(0, 204, 255);
+$firstColor: rgb(9, 146, 180);
+$firstColor-transparent: rgba(9, 146, 180, 0.6);
 $secondColor: rgb(6, 182, 6);
+$secondColor-transparent: rgba(6, 182, 6, 0.6);
 $thirdColor: rgb(245, 119, 73);
+$thirdColor-transparent: rgba(245, 119, 73, 0.6);
 $fourthColor: rgb(87, 84, 84);
-$textColor: rgb(255, 255, 255);
+$fourthColor-transparent: rgba(87, 84, 84, 0.6);
+$colorFooter: rgb(237, 231, 231);
+$colorFooter-transparent: rgba(237, 231, 231, 0.4);
 
-.rates_card {
+$textColorLight: rgb(255, 255, 255);
+$textColorDark: rgb(96, 94, 94);
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
-  margin: 3px;
-  border: 1px solid $secondColor;
+  border: 2px solid $textColorLight;
 }
 
-.rates_card__selected {
-  width: 250px;
-}
-
-.rates_name {
+.name,
+.selected {
+  padding: 12px 0;
   font-size: 18px;
+  font-weight: 500;
   background-color: $firstColor;
+  color: $textColorLight;
+  border-bottom: 1px solid $textColorLight;
 }
 
-.price {
-  font-size: 40px;
-}
-
-.text {
-  color: brown;
+.name {
+  padding: 12px 0;  
 }
 
 .selected {
-  border: 2px solid orange;
-  font-weight: bolder;
+  padding: 20px 0;  
+}
+
+.price {
+  font-size: 50px;
+}
+
+.text {
+  background-color: $colorFooter-transparent;
+  color: $textColorDark;
+  padding: 18px;
+}
+
+.textprice {
+  color: $textColorLight;
+  font-size: 12px;
+}
+
+.textmounth {
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.block_price {
+  background-color: $firstColor-transparent;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  color: $textColorLight;
+}
+
+.footer {
+  padding: 10px;
+  line-height: 1.5;
+  background-color: $colorFooter;
+  color: $textColorDark;
 }

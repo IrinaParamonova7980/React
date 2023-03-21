@@ -1,16 +1,18 @@
 import styles from "./rates.module.scss";
 
 function Rates(props) {
-  const classRates = props.isSelected ? "styles.rates_card__selected" : "";
+  const classRates = props.isSelected ? styles.selected : styles.name;
 
   return (
-    <div className={`styles.rates_card ${classRates}`}>
-      <div className={styles.rates_name}>{props.name}</div>
-      <div className={styles.text}>руб</div>
+    <div className={styles.card}>
+      <div className={classRates}>{props.name}</div>
+      <div className={styles.block_price}>
+      <div className={styles.textprice}>руб</div>
       <div className={styles.price}> {props.price} </div>
-      <div className={styles.text}>/мес</div>
+        <div className={styles.textmounth}>/мес</div>
+        </div>
       <div className={styles.text}>{props.speed} </div>
-      <div className={styles.text}>Объем включенного трафика не ограничен</div>
+      <div className={styles.footer}>Объем включенного трафика не ограничен</div>
     </div>
   );
 }

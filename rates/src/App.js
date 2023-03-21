@@ -40,11 +40,11 @@ function App() {
           isSelected={rate.isSelected}
         ></Rates>
       ))}
-      <div>
+      {/* <div>
         <Component theme={themedark}></Component>
         <Component theme={themelight}></Component>
         <Login></Login>
-      </div>
+      </div> */}
     </div>
   );
 }
