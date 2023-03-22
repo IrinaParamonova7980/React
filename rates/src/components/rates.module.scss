@@ -1,11 +1,11 @@
-$firstColor: rgb(9, 146, 180);
-$firstColor-transparent: rgba(9, 146, 180, 0.6);
-$secondColor: rgb(6, 182, 6);
-$secondColor-transparent: rgba(6, 182, 6, 0.6);
-$thirdColor: rgb(245, 119, 73);
-$thirdColor-transparent: rgba(245, 119, 73, 0.6);
-$fourthColor: rgb(87, 84, 84);
-$fourthColor-transparent: rgba(87, 84, 84, 0.6);
+$colorA: rgb(9, 146, 180);
+$colorA-transparent: rgba(9, 146, 180, 0.6);
+$colorB: rgb(6, 182, 6);
+$colorB-transparent: rgba(6, 182, 6, 0.6);
+$colorC: rgb(245, 119, 73);
+$colorC-transparent: rgba(245, 119, 73, 0.6);
+$colorD: rgb(87, 84, 84);
+$colorD-transparent: rgba(87, 84, 84, 0.6);
 $colorFooter: rgb(237, 231, 231);
 $colorFooter-transparent: rgba(237, 231, 231, 0.4);
 
@@ -25,17 +25,17 @@ $textColorDark: rgb(96, 94, 94);
   padding: 12px 0;
   font-size: 18px;
   font-weight: 500;
-  background-color: $firstColor;
+  //background-color: $colorA;
   color: $textColorLight;
   border-bottom: 1px solid $textColorLight;
 }
 
 .name {
-  padding: 12px 0;  
+  padding: 12px 0;
 }
 
 .selected {
-  padding: 20px 0;  
+  padding: 20px 0;
 }
 
 .price {
@@ -59,7 +59,7 @@ $textColorDark: rgb(96, 94, 94);
 }
 
 .block_price {
-  background-color: $firstColor-transparent;
+  // background-color: $colorA-transparent;
   display: flex;
   justify-content: center;
   padding: 30px 0;

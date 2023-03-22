@@ -1,5 +1,6 @@
 import "./App.css";
 import Rates from "./components/Rates";
+import colorA from "./components/themeA.scss";
 import Login from "./components/Login/Login";
 import Component from "./components/Component/Component";
 import themelight from "./components/Component/themelight.css";
@@ -38,13 +39,14 @@ function App() {
           price={rate.price}
           speed={rate.speed}
           isSelected={rate.isSelected}
+          theme={colorA}
         ></Rates>
       ))}
-      {/* <div>
-        <Component theme={themedark}></Component>
-        <Component theme={themelight}></Component>
-        <Login></Login>
-      </div> */}
+      <div>
+        {/* <Component theme={themedark}></Component>
+        <Component theme={themelight}></Component> */}
+        {/* <Login></Login> */}
+      </div>
     </div>
   );
 }
