@@ -1,10 +1,12 @@
 import "./App.css";
 import Rates from "./components/Rates";
 import colorA from "./components/themeA.scss";
-import Login from "./components/Login/Login";
+//import Login from "./components/Login/Login";
 import Component from "./components/Component/Component";
 import themelight from "./components/Component/themelight.css";
 import themedark from "./components/Component/themedark.css";
+
+//const isAutorized = "Маруся";
 
 const rates = [
   {
@@ -43,9 +45,9 @@ function App() {
         ></Rates>
       ))}
       <div>
-        {/* <Component theme={themedark}></Component>
-        <Component theme={themelight}></Component> */}
-        {/* <Login></Login> */}
+        <Component theme={themedark}></Component>
+        <Component theme={themelight}></Component>
+        {/* <Login isAutorized={isAutorized} name={isAutorized}></Login> */}
       </div>
     </div>
   );
