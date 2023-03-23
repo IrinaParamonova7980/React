@@ -1,6 +1,7 @@
 import "./App.css";
 import Rates from "./components/Rates";
 import colorA from "./components/themeA.module.scss";
+import Card from "./components/Card/Card";
 
 //import Login from "./components/Login/Login";
 // import Component from "./components/Component/Component";
@@ -46,11 +47,12 @@ function App() {
           key={index}
         ></Rates>
       ))}
-      {/* <div>
-        <Component theme={themedark}></Component>
+      <div>
+        <Card></Card>
+        {/* <Component theme={themedark}></Component>
         <Component theme={themelight}></Component>
-        <Login isAutorized={isAutorized} name={isAutorized}></Login>
-      </div> */}
+        <Login isAutorized={isAutorized} name={isAutorized}></Login> */}
+      </div>
     </div>
   );
 }
