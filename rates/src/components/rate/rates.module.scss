@@ -25,7 +25,7 @@ $textColorDark: rgb(96, 94, 94);
   padding: 12px 0;
   font-size: 18px;
   font-weight: 500;
-  //background-color: $colorA;
+  background-color: $colorA;
   color: $textColorLight;
   border-bottom: 1px solid $textColorLight;
 }
@@ -59,7 +59,7 @@ $textColorDark: rgb(96, 94, 94);
 }
 
 .block_price {
-  // background-color: $colorA-transparent;
+  background-color: $colorA-transparent;
   display: flex;
   justify-content: center;
   padding: 30px 0;

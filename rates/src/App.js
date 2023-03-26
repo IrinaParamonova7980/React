@@ -1,13 +1,11 @@
 import "./App.css";
-import Rates from "./components/Rates";
-import colorA from "./components/themeA.module.scss";
-import Card from "./components/Card/Card";
+import Rates from "./components/rate/Rates";
 
-//import Login from "./components/Login/Login";
-// import Component from "./components/Component/Component";
-// import themelight from "./components/Component/themelight.module.scss";
-// import themedark from "./components/Component/themedark.module.scss";
-
+//import Card from "./components/card/Card";
+//import Login from "./components/login/Login";
+// import Component from "./components/component/Component";
+// import themelight from "./components/component/themelight.module.scss";
+// import themedark from "./components/component/themedark.module.scss";
 //const isAutorized = "Маруся";
 
 const rates = [
@@ -43,16 +41,15 @@ function App() {
           price={rate.price}
           speed={rate.speed}
           isSelected={rate.isSelected}
-          theme={colorA}
           key={index}
         ></Rates>
       ))}
-      <div>
+      {/* <div>
         <Card></Card>
-        {/* <Component theme={themedark}></Component>
+        <Component theme={themedark}></Component>
         <Component theme={themelight}></Component>
-        <Login isAutorized={isAutorized} name={isAutorized}></Login> */}
-      </div>
+        <Login isAutorized={isAutorized} name={isAutorized}></Login>
+      </div> */}
     </div>
   );
 }
