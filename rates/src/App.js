@@ -1,5 +1,7 @@
 import "./App.css";
+import Button from "./components/button/Button";
 import Rates from "./components/rate/Rates";
+
 
 //import Card from "./components/card/Card";
 //import Login from "./components/login/Login";
@@ -50,6 +52,7 @@ function App() {
         <Component theme={themelight}></Component>
         <Login isAutorized={isAutorized} name={isAutorized}></Login>
       </div> */}
+      {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
     </div>
   );
 }
