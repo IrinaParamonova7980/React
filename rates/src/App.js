@@ -1,7 +1,6 @@
 import "./App.css";
-import Button from "./components/button/Button";
+//import Button from "./components/button/Button";
 import Rates from "./components/rate/Rates";
-
 
 //import Card from "./components/card/Card";
 //import Login from "./components/login/Login";
