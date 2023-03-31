@@ -1,4 +1,5 @@
 import "./App.css";
+import Boris from "./components/boris/Boris";
 //import Button from "./components/button/Button";
 import Rates from "./components/rate/Rates";
 
@@ -52,6 +53,7 @@ function App() {
         <Login isAutorized={isAutorized} name={isAutorized}></Login>
       </div> */}
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
+      {/*<Boris></Boris>*/}
     </div>
   );
 }
