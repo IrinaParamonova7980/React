@@ -1,7 +1,8 @@
 import "./App.css";
-import Boris from "./components/boris/Boris";
+//import Boris from "./components/boris/Boris";
 //import Button from "./components/button/Button";
 import Rates from "./components/rate/Rates";
+import Timer from "./components/timer/Timer";
 
 //import Card from "./components/card/Card";
 //import Login from "./components/login/Login";
@@ -54,6 +55,7 @@ function App() {
       </div> */}
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
       {/*<Boris></Boris>*/}
+      <Timer></Timer>
     </div>
   );
 }

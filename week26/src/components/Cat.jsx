@@ -42,3 +42,4 @@ class Cat extends React.Component {
 // }
 
 export default Cat;
+
