@@ -18,7 +18,7 @@ export default class Timer extends React.Component {
 
   //когда что-то не нужно рендерить
   shouldComponentUpdate(nextProps, nextState) {
-    if (nextState.timerId != this.state.timerId) return false;
+    if (nextState.timerId !== this.state.timerId) return false;
     return true;
   }
 
@@ -46,10 +46,11 @@ export default class Timer extends React.Component {
   }
 
   render() {
+    const { minutes, seconds } = this.props;
     return (
       <div>
         <p>
-          Timer info: {this.state.minutes}:{this.state.seconds}
+          Timer info: {minutes||this.state.minutes}:{seconds||this.state.seconds}
         </p>
         <div>
           <button onClick={this.stop}>Stop</button>

@@ -56,8 +56,7 @@ function App() {
       </div> */}
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
       {/*<Boris></Boris>*/}
-      {/* <Timer></Timer> */}
-      <Counter></Counter>
+      <Timer></Timer>
     </div>
   );
 }
