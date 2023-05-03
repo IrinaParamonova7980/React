@@ -1,8 +1,9 @@
 import "./App.css";
+import CardList from "./components/cardlist/CardList";
 //import Boris from "./components/boris/Boris";
 //import Button from "./components/button/Button";
 import Rates from "./components/rate/Rates";
-import Timer from "./components/timer/Timer";
+//import Timer from "./components/timer/Timer";
 
 //import Card from "./components/card/Card";
 //import Login from "./components/login/Login";
@@ -38,7 +39,7 @@ const rates = [
 function App() {
   return (
     <div className="App">
-      {rates.map((rate, index) => (
+      {/* {rates.map((rate, index) => (
         <Rates
           name={rate.name}
           price={rate.price}
@@ -46,7 +47,7 @@ function App() {
           isSelected={rate.isSelected}
           key={index}
         ></Rates>
-      ))}
+      ))} */}
       {/* <div>
         <Card></Card>
         <Component theme={themedark}></Component>
@@ -55,7 +56,8 @@ function App() {
       </div> */}
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
       {/*<Boris></Boris>*/}
-      <Timer minutes={"10"} seconds={'20'}></Timer>
+      {/* <Timer minutes={"10"} seconds={'20'}></Timer> */}
+      <CardList></CardList>
     </div>
   );
 }
