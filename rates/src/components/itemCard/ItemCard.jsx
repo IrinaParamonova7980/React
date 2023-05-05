@@ -9,13 +9,13 @@ export default class ItemCard extends React.Component {
 
   //первый способ
   // onClick = (title, e) => {
-  // this.setState({ title: card.title });
+  //   this.setState({ title: card.title });
   // };
 
   //второй способ
-  //   onClick = (title) => (e) => {
-  //     this.setState({ title: card.title });
-  //     };
+  // onClick = (title) => (e) => {
+  //   this.setState({ title: card.title });
+  // };
 
   //третий способ
   onClick = (e) => {
