@@ -1,6 +1,6 @@
 import "./App.css";
 import CardList from "./components/cardlist/CardList";
-//import Counter from "./components/counter/Counter";
+import Counter from "./components/counter/Counter";
 //import Boris from "./components/boris/Boris";
 //import Button from "./components/button/Button";
 //import Rates from "./components/rate/Rates";
@@ -72,8 +72,9 @@ function App() {
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
       {/*<Boris></Boris>*/}
       {/* <Timer minutes={"10"} seconds={'20'}></Timer> */}
-      <CardList items={items}></CardList>
-      {/* <Timer></Timer> */}
+      <CardList></CardList>
+
+      <Timer></Timer>
     </div>
   );
 }
