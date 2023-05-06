@@ -20,8 +20,13 @@ export default class ItemCard extends React.Component {
   //третий способ
   onClick = (e) => {
     this.setState({ title: e.target.dataset.title });
+    //вызов из детского компонента
     this.props.addToCart();
   };
+
+  clean = (e) => {
+    this.setState({title:""})
+  }
 
   render() {
     const { title, price, imgLink } = this.props;

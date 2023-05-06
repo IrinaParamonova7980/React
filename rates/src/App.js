@@ -1,13 +1,11 @@
 import "./App.css";
-<<<<<<< HEAD
 import CardList from "./components/cardlist/CardList";
-=======
-import Counter from "./components/counter/Counter";
->>>>>>> e8237aca2fe0abddba30ca3a5d7b0768af7ec873
+//import Counter from "./components/counter/Counter";
 //import Boris from "./components/boris/Boris";
 //import Button from "./components/button/Button";
-import Rates from "./components/rate/Rates";
+//import Rates from "./components/rate/Rates";
 //import Timer from "./components/timer/Timer";
+import useLocalStorage from "./useLocalStorage";
 
 //import Card from "./components/card/Card";
 //import Login from "./components/login/Login";
@@ -41,6 +39,19 @@ const rates = [
 ];
 
 function App() {
+  const [items, setItem] = useLocalStorage("item", [
+    {
+      title: "Котик 1",
+      price: "300",
+      imgLink: "https://cs13.pikabu.ru/avatars/3128/x3128007-1508104989.png",
+    },
+    {
+      title: "Котик 2",
+      price: "500",
+      imgLink: "https://cs8.pikabu.ru/avatars/2371/x2371548-727987058.png",
+    },
+  ]);
+
   return (
     <div className="App">
       {/* {rates.map((rate, index) => (
@@ -60,12 +71,9 @@ function App() {
       </div> */}
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
       {/*<Boris></Boris>*/}
-<<<<<<< HEAD
       {/* <Timer minutes={"10"} seconds={'20'}></Timer> */}
-      <CardList></CardList>
-=======
-      <Timer></Timer>
->>>>>>> e8237aca2fe0abddba30ca3a5d7b0768af7ec873
+      <CardList items={items}></CardList>
+      {/* <Timer></Timer> */}
     </div>
   );
 }
