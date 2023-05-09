@@ -1,0 +1,10 @@
+$colorD: rgb(87, 84, 84);
+$colorD-transparent: rgba(87, 84, 84, 0.7);
+
+.name {
+  background-color: $colorD;
+}
+
+.price {
+  background-color: $colorD-transparent;
+}

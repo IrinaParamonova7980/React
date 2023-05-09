@@ -1,0 +1,10 @@
+$colorC: rgb(245, 119, 73);
+$colorC-transparent: rgba(245, 119, 73, 0.7);
+
+.name {
+  background-color: $colorC;
+}
+
+.price {
+  background-color: $colorC-transparent;
+}

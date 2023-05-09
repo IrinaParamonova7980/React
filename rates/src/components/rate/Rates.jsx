@@ -10,11 +10,15 @@ export default function Rates(props) {
   return (
     <div className={styles.card} onClick={handleChange}>
       {pressed ? (
-        <div className={styles.selected}>{props.name}</div>
+        <div className={`${styles.selected} ${props.theme["name"]}`}>
+          {props.name}
+        </div>
       ) : (
-        <div className={styles.name}>{props.name}</div>
+        <div className={`${styles.name} ${props.theme["name"]}`}>
+          {props.name}
+        </div>
       )}
-      <div className={styles.block_price}>
+      <div className={`${styles.block_price} ${props.theme["price"]}`}>
         <div className={styles.textprice}>руб</div>
         <div className={styles.price}> {props.price} </div>
         <div className={styles.textmounth}>/мес</div>

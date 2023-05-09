@@ -1,9 +1,9 @@
 import "./App.css";
-import CardList from "./components/cardlist/CardList";
-import Counter from "./components/counter/Counter";
+//import CardList from "./components/cardlist/CardList";
+//import Counter from "./components/counter/Counter";
 //import Boris from "./components/boris/Boris";
 //import Button from "./components/button/Button";
-//import Rates from "./components/rate/Rates";
+import Rates from "./components/rate/Rates";
 //import Timer from "./components/timer/Timer";
 import useLocalStorage from "./useLocalStorage";
 
@@ -13,6 +13,13 @@ import useLocalStorage from "./useLocalStorage";
 // import themelight from "./components/component/themelight.module.scss";
 // import themedark from "./components/component/themedark.module.scss";
 //const isAutorized = "Маруся";
+
+import theme1 from "./components/rate/theme1.module.scss";
+import theme2 from "./components/rate/theme2.module.scss";
+import theme3 from "./components/rate/theme3.module.scss";
+import theme4 from "./components/rate/theme4.module.scss";
+
+const themes = [theme1, theme2, theme3, theme4];
 
 const rates = [
   {
@@ -54,15 +61,16 @@ function App() {
 
   return (
     <div className="App">
-      {/* {rates.map((rate, index) => (
+      {rates.map((rate, index) => (
         <Rates
           name={rate.name}
           price={rate.price}
           speed={rate.speed}
           isSelected={rate.isSelected}
           key={index}
+          theme={themes[index]}
         ></Rates>
-      ))} */}
+      ))}
       {/* <div>
         <Card></Card>
         <Component theme={themedark}></Component>
@@ -72,9 +80,8 @@ function App() {
       {/* <Button name={'Нажми меня'}  id="test" title="button"></Button> */}
       {/*<Boris></Boris>*/}
       {/* <Timer minutes={"10"} seconds={'20'}></Timer> */}
-      <CardList></CardList>
-
-      <Timer></Timer>
+      {/* <CardList></CardList>
+      <Timer></Timer> */}
     </div>
   );
 }
