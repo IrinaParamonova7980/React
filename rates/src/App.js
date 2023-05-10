@@ -18,6 +18,7 @@ import theme1 from "./components/rate/theme1.module.scss";
 import theme2 from "./components/rate/theme2.module.scss";
 import theme3 from "./components/rate/theme3.module.scss";
 import theme4 from "./components/rate/theme4.module.scss";
+import Form from "./components/form/form";
 
 const themes = [theme1, theme2, theme3, theme4];
 
@@ -71,6 +72,7 @@ function App() {
           theme={themes[index]}
         ></Rates>
       ))}
+      <Form></Form>
       {/* <div>
         <Card></Card>
         <Component theme={themedark}></Component>
