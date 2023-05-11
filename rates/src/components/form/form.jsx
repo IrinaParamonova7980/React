@@ -22,6 +22,15 @@ export default class Form extends React.Component {
     this.setState({ [e.target.name]: value });
   };
 
+  handleClick = (e) => {
+    e.preventDefault();
+    if (this.state.login.length !== 0) {
+      console.log("Поле заполнено");
+    } else {
+      console.log("Поле не заполнено");
+    }
+  };
+
   //Вариант написания функций отдельно
 
   //   handleChange = (e) => {
@@ -77,7 +86,7 @@ export default class Form extends React.Component {
             />
             RememberMe
           </div>
-          <button>Login</button>
+          <button onClick={this.handleClick}>Login</button>
         </form>
       </div>
     );
