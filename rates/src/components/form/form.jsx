@@ -11,17 +11,19 @@ export default class Form extends React.Component {
     };
   }
 
-    //Вариант написания функций все в одной
-    
+  //Вариант написания функций все в одной
+
   handleChange = (e) => {
     let value =
       e.target.type === "checkbox" ? e.target.checked : e.target.value;
-      if (e.target.name === "login") { value = value.toUpperCase() };
+    if (e.target.name === "login") {
+      value = value.toUpperCase();
+    }
     this.setState({ [e.target.name]: value });
   };
 
-    //Вариант написания функций отдельно
-    
+  //Вариант написания функций отдельно
+
   //   handleChange = (e) => {
   //     this.setState({ [e.target.name]: e.target.value.toUpperCase() });
   //     };
@@ -55,8 +57,9 @@ export default class Form extends React.Component {
           </div>
           <div>
             <select
+              multiple={true}
               name="server"
-              value={this.state.server}
+              defaultvalue={["1", "2", "3"]}
               onChange={this.handleChange}
             >
               <option value="1">Server1</option>
