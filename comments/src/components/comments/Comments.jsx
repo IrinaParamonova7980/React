@@ -7,23 +7,25 @@ export default function Comments() {
   const [comment, setComment] = useState("");
   const [commentList, setCommentList] = useState(comments);
 
-  function saveComment() {
-    setCommentList([...commentList, { id: uuid(), title: comment }]);
+  function addComment() {
+    let newComment = { id: uuid(), title: comment };
+    setCommentList([newComment, ...commentList]);
+    //newComment.styles = styles.commentnew;
     setComment("");
   }
 
   function deleteComment(id) {
-    let newComment = [...commentList].filter((item) => item.id !== id);
-    setCommentList(newComment);
+    let deleteComment = [...commentList].filter((item) => item.id !== id);
+    setCommentList(deleteComment);
   }
 
   return (
-    <div className={styles.container}>
+    <div>
       <h2>Комментарии</h2>
-      <div className={styles.comments}>
+      <div className={styles.comments_block}>
         {commentList.map((item) => (
-          <div key={item.id}>
-            <div>{item.title}</div>
+          <div key={item.id} className={styles.comments}>
+            <div className={styles.item}>{item.title}</div>
             <button
               className={styles.button}
               onClick={() => deleteComment(item.id)}
@@ -35,13 +37,13 @@ export default function Comments() {
       </div>
       <textarea
         rows="5"
-        cols="20"
+        className={styles.textarea}
         placeholder="Напишите что-нибудь..."
         value={comment}
         onChange={(e) => setComment(e.target.value)}
       ></textarea>
       <div>
-        <button className={styles.button} onClick={saveComment}>
+        <button className={styles.button_save} onClick={addComment}>
           Отправить
         </button>
       </div>

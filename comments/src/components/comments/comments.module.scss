@@ -1,0 +1,50 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 30px;
+  font-size: 16px;
+  border-bottom: 1px solid lightgray;
+}
+
+.item{
+  color: blue;
+}
+
+.commentnew{
+  color: red;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.textarea {
+  width: 90%;
+  margin: 25px 5px;
+  font-size: 16px;
+}
+
+.button {
+  padding: 5px;
+  background-color: chocolate;
+  color: aliceblue;
+  border: chocolate;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.button_save {
+  width: 50%;
+  padding: 5px;
+  background-color: green;
+  color: aliceblue;
+  border: 2px solid green;
+  border-radius: 3px;
+  font-size: 14px;
+}
