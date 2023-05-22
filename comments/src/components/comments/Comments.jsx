@@ -7,10 +7,9 @@ export default function Comments() {
   const [comment, setComment] = useState("");
   const [commentList, setCommentList] = useState(comments);
 
+  let newComment = { id: uuid(), title: comment };
   function addComment() {
-    let newComment = { id: uuid(), title: comment };
     setCommentList([newComment, ...commentList]);
-    //newComment.styles = styles.commentnew;
     setComment("");
   }
 
@@ -25,7 +24,13 @@ export default function Comments() {
       <div className={styles.comments_block}>
         {commentList.map((item) => (
           <div key={item.id} className={styles.comments}>
-            <div className={styles.item}>{item.title}</div>
+            <div
+              className={
+                item.id === newComment.id ? styles.commentnew : styles.item
+              }
+            >
+              {item.title}
+            </div>
             <button
               className={styles.button}
               onClick={() => deleteComment(item.id)}
