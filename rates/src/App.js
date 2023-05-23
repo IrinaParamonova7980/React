@@ -5,7 +5,7 @@ import "./App.css";
 //import Button from "./components/button/Button";
 import Rates from "./components/rate/Rates";
 //import Timer from "./components/timer/Timer";
-import useLocalStorage from "./useLocalStorage";
+//import useLocalStorage from "./useLocalStorage";
 
 //import Card from "./components/card/Card";
 //import Login from "./components/login/Login";
@@ -18,8 +18,9 @@ import theme1 from "./components/rate/theme1.module.scss";
 import theme2 from "./components/rate/theme2.module.scss";
 import theme3 from "./components/rate/theme3.module.scss";
 import theme4 from "./components/rate/theme4.module.scss";
-import Form from "./components/form/Form";
-import FormikForm from "./components/formik/Formik";
+import Word from "./components/word/Word";
+//import FormikForm from "./components/formik/Formik";
+//import Form from "./components/form/form";
 
 const themes = [theme1, theme2, theme3, theme4];
 
@@ -48,18 +49,18 @@ const rates = [
 ];
 
 function App() {
-  const [items, setItem] = useLocalStorage("item", [
-    {
-      title: "Котик 1",
-      price: "300",
-      imgLink: "https://cs13.pikabu.ru/avatars/3128/x3128007-1508104989.png",
-    },
-    {
-      title: "Котик 2",
-      price: "500",
-      imgLink: "https://cs8.pikabu.ru/avatars/2371/x2371548-727987058.png",
-    },
-  ]);
+  // const [items, setItem] = useLocalStorage("item", [
+  //   {
+  //     title: "Котик 1",
+  //     price: "300",
+  //     imgLink: "https://cs13.pikabu.ru/avatars/3128/x3128007-1508104989.png",
+  //   },
+  //   {
+  //     title: "Котик 2",
+  //     price: "500",
+  //     imgLink: "https://cs8.pikabu.ru/avatars/2371/x2371548-727987058.png",
+  //   },
+  // ]);
 
   return (
     <div className="App">
@@ -73,7 +74,8 @@ function App() {
           theme={themes[index]}
         ></Rates>
       ))}
-      {/* <Form></Form> */}
+      <Word></Word>
+     {/* <Form></Form> */}
       {/* <div>
         <Card></Card>
         <Component theme={themedark}></Component>
@@ -85,7 +87,7 @@ function App() {
       {/* <Timer minutes={"10"} seconds={'20'}></Timer> */}
       {/* <CardList></CardList>
       <Timer></Timer> */}
-      <FormikForm></FormikForm>
+      {/* <FormikForm></FormikForm> */}
     </div>
   );
 }
