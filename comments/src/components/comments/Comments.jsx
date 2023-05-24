@@ -6,10 +6,14 @@ import comments from "../../comments.json";
 export default function Comments() {
   const [comment, setComment] = useState("");
   const [commentList, setCommentList] = useState(comments);
+  const [newComment, setNewComment] = useState("");
 
-  let newComment = { id: uuid(), title: comment };
+  
   function addComment() {
-    setCommentList([newComment, ...commentList]);
+    let commentNew={ id: uuid(), title: comment };
+    setNewComment(commentNew);
+    setCommentList([commentNew, ...commentList]);
+    console.log(newComment);
     setComment("");
   }
 
@@ -26,10 +30,8 @@ export default function Comments() {
           <div key={item.id} className={styles.comments}>
             <div
               className={
-                item.id === newComment.id ? styles.commentnew : styles.item
-              }
-            >
-              {item.title}
+                item.id === (newComment&&newComment.id) ? styles.commentnew : styles.item }
+            >  {item.title}    
             </div>
             <button
               className={styles.button}
